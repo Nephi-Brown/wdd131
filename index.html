@@ -22,16 +22,40 @@
         </nav>
     </header>
     <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <img src="images/profile.webp" alt="Profile picture of author" width="150">
-            <p>My full name is Nephi Odin Jayce Brown, although I usually just go by Nephi. I was born in Saudi Arabia and grew up in South Africa until I was 13. After that we moved to the UK, where my family has been ever since. I am currently studying Engineering at York University, and am trying my best to have a good first year.</p>
-        </section>
-        <section class="card">
-            <h2>United Kingdom</h2>
-            <img src="images/flag.webp" alt="Description of Section 2 Image" width="150">
-            <p>The United Kingdom is actually a union of four countries. These countries are: England, Scotland, Wales, and Northern Ireland. The UK has a number of iconic landmarks such as Big Ben, the Tower of London, and Stonehenge. It is also well known for still having a royal family, although they play little roll in the countries actual politics.</p>
-        </section>
+        <div class="grid-container">
+            <section class="card card-wide">
+                <section class="about">
+                    <h2>About Me</h2>
+                    <div class="about-content">
+                        <p>My full name is Nephi Odin Jayce Brown, although I usually just go by Nephi. I was born in Saudi Arabia and grew up in South Africa until I was 13. After that we moved to the UK, where my family has been ever since. I am currently studying Engineering at York University, and am trying my best to have a good first year.</p>
+                        <img src="images/profile.webp" alt="Profile picture of author" width="150">
+                    </div>
+                  </section>
+                <section class="location">
+                    <h2>United Kingdom</h2>
+                    <div class="location-content">
+                        <img src="images/flag.webp" alt="UK Flag" width="100">
+                        <div>
+                            <p>The United Kingdom is actually a union of four countries. These countries are: England, Scotland, Wales, and Northern Ireland. The UK has a number of iconic landmarks such as Big Ben, the Tower of London, and Stonehenge. It is also well known for still having a royal family, although they play little role in the country's actual politics.</p>
+                        </div>
+                    </div>
+                  </section>
+            </section>
+                <section class="card card-narrow">
+                    <section class="resources">
+                        <h2>Web Dev Resources</h2>
+                        <ul>
+                            <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                            <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                            <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                            <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                            <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                            <li><a href="https://placeholder.com/" target="_blank">Image Placeholder</a></li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span>★ Nephi Brown ★ York, UK</p>
