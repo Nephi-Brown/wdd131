@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #8d4986;
+    --secondary-color: black;
+    --header-footer-bg: #84dce8;
+    --paragraph-font: 'Roboto', sans-serif;
+}
+body,
+html {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: var(--secondary-color);
+}
+header {
+    background-color: var(--header-footer-bg);
+    color: royalblue;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+.nav-section {
+    margin: 0;
+    padding: 0;
+    gap: 3px;
+}
+.nav-section {
+    background-color: navy;
+}
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    text-align: left;
+}
+#menu::before {
+    content: "☰";
+}
+.header-nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: navy;
+    padding: 10px 0;
+}
+.navigation {
+    list-style: none;
+    display: flex;
+    padding: 15px 20px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.5s ease-in-out;
+    font-size: clamp(1.2rem, 2vmin, 1.2rem);
+    margin-left: 4rem;
+}
+.navigation a.active {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.navigation a:hover {
+    color: #3BFF38;
+    background-color: gray;
+}
+.navigation.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navigation.show li {
+    display: block;
+}
+#menu.show::before {
+    content: "❎ ";
+}   
+main {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1500px;
+    align-content: center;
+    box-sizing: border-box;
+}
+main h2 {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    margin: 20px 0;
+}
+.temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+figure {
+    margin: 0;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    background: #fff;
+}
+figure img {
+    width: 100%;
+    height: auto;
+}
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+footer {
+    background-color: var(--header-footer-bg);
+    color: royalblue;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    box-sizing: border-box; 
+    position: relative;
+    bottom: 0;
+}
+#lastModified {
+    color: black;
+}
