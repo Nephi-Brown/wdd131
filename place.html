@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Italian Data and Weather by Nephi Brown">
+    <meta name="author" content="NephiBrown">
+    <title>Italy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css" id="main-stylesheet">
+    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Italy</h1>
+        <div class="header-strip"></div>
+    </header>
+    <main>
+        <section class="place">
+            <picture>
+                <!-- Large JPEG image (italy6) for screens 768px and wider -->
+                <source srcset="images/italy1.webp" media="(min-width: 768px)">
+                <!-- Small JPEG image (italy5) for smaller screens -->
+                <img src="images/italy2.webp" alt="Scenic view of Italy" class="responsive-image">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <p>Area: 301,340 sq km</p>
+            <p>Population: 58,968,501</p>
+            <p>Capital: Rome</p>
+            <p>Languages: Italian</p>
+            <p>Currency: Euro</p>
+            <p>Time Zone: UTC+1</p>
+            <p>Calling Code: +39</p>
+            <p>Internet TLD: .it</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <svg class="weather-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="20" cy="20" r="10" fill="#FFD700"></circle>
+                <line x1="20" y1="2" x2="20" y2="8" stroke="#FFA500" stroke-width="2"></line>
+                <line x1="20" y1="32" x2="20" y2="38" stroke="#FFA500" stroke-width="2"></line>
+                <line x1="2" y1="20" x2="8" y2="20" stroke="#FFA500" stroke-width="2"></line>
+                <line x1="32" y1="20" x2="38" y2="20" stroke="#FFA500" stroke-width="2"></line>
+                <line x1="8.48" y1="8.48" x2="12.97" y2="12.97" stroke="#FFA500" stroke-width="2"></line>
+                <line x1="27.03" y1="27.03" x2="31.52" y2="31.52" stroke="#FFA500" stroke-width="2"></line>
+                <line x1="8.48" y1="31.52" x2="12.97" y2="27.03" stroke="#FFA500" stroke-width="2"></line>
+                <line x1="27.03" y1="12.97" x2="31.52" y2="8.48" stroke="#FFA500" stroke-width="2"></line>
+                <path d="M44,34c-2,0-3.8,0.5-5.4,1.5-1.2-4.4-5-7.5-9.6-7.5-4.3,0-8,2.8-9.2,6.7C19,34.3,18,34,17,34c-4.4,0-8,3.6-8,8s3.6,8,8,8h27
+                c4.4,0,8-3.6,8-8S48.4,34,44,34z" fill="#B0C4DE"></path>
+            </svg>
+            <p><span>Temperature: 10°C</span></p>
+            <p><span>Conditions: Partly Cloudy</span></p>
+            <p><span>Wind: 5 km/h</span></p>
+            <p><span>Wind Chill: 9.8°C</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>★ Nephi Brown ★ York, UK</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

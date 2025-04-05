@@ -1,0 +1,117 @@
+@media (min-width: 768px) {
+
+    :root {
+        --primary-color: #4caf50;
+        --text-color: white;
+        --bg-opacity: rgba(255, 255, 255, 0.9);
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header,
+    footer {
+        text-align: center;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 2500px;
+        position: relative;
+    }
+
+    .place {
+        width: 100%;
+        height: auto;
+        max-width: 2500px;
+        overflow: hidden;
+    }
+
+    .place img {
+        width: 100%;
+        max-width: 2500px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0;
+    }
+
+    .data {
+        width: 18%;
+        background-color: var(--bg-opacity);
+        padding: 10px;
+        border-radius: 8px;
+        text-align: left;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .data h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        border-radius: 0 5px 2px 2px;
+    }
+
+    .data p {
+        margin: 8px 0;
+        font-weight: bold;
+    }
+
+    .weather {
+        width: 18%;
+        background-color: var(--bg-opacity);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .weather h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "⛅";
+        font-size: 2rem;
+        margin-left: 8px;
+        display: inline-block;
+    }
+
+    .weather p {
+        margin: 8px 0;
+        font-weight: bold;
+    }
+
+}
