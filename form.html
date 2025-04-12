@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Web Fundamentals by Kim Brown, Web Development, JavaScript, CSS, HTML">
+    <meta name="author" content="Kim Brown">
+    <title>Review Confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+    <header class="title-container">
+        <h1>Product Review</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-action="home">Home</a></li>
+                <li><a href="#" data-action="contact us">Contact</a></li>
+                <li><a href="#" data-action="review form">Form</a></li>
+                <li><a href="https://www.instagram.com/mai_knight?igsh=MWd0bXBwMTNuZG1kcA==">Instagram</a></li>
+                <li><a href="#" data-action="spinal flow">Final Project</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10.3-5?lang=eng">Scripture
+                        Link</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <form method="get" action="review.html">
+            <!-- Product Name -->
+            <label for="product-name">Product Name</label>
+            <select id="product-name" name="product-name" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label>
+                    <input type="radio" name="rating" value="1" required> ☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="2"> ☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="3"> ☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="4"> ☆☆☆☆
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="5"> ☆☆☆☆☆
+                </label>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installation-date">Date of Installation</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <label>
+                    <input type="checkbox" name="feature" value="durability"> Durability
+                </label>
+                <label>
+                    <input type="checkbox" name="feature" value="design"> Design
+                </label>
+                <label>
+                    <input type="checkbox" name="feature" value="performance "> Performance
+                </label>
+                <label>
+                    <input type="checkbox" name="feature" value="application"> Ease of Use
+                </label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="written-review">Written Review (optional)</label>
+            <textarea id="written-review" name="written-review"></textarea>
+
+            <!-- User Name -->
+            <label for="user-name">Your Name (optional)</label>
+            <input type="text" id="user-name" name="user-name">
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Kim Brown 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Edinburgh,Scotland
+            🏴󠁧󠁢󠁳󠁣󠁴󠁿</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
