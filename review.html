@@ -20,20 +20,5 @@
         <p>&copy; <span id="currentyear"></span>★ Nephi Brown ★ York, UK</p>
         <p id="lastModified"></p>
     </footer>
-
-  <script>
-
-    const countElement = document.getElementById('reviewCount');
-    let reviewCount = localStorage.getItem('reviewCount');
-
-    if (reviewCount) {
-      reviewCount = parseInt(reviewCount) + 1;
-    } else {
-      reviewCount = 1;
-    }
-
-    localStorage.setItem('reviewCount', reviewCount);
-    countElement.textContent = reviewCount;
-  </script>
 </body>
 </html>
