@@ -16,12 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    let reviewCount = localStorage.getItem("reviewCount") || 0;
-    reviewCount++;
-    localStorage.setItem("reviewCount", reviewCount);
-    document.getElementById("review-count").textContent = reviewCount;
-});
+const countElement = document.getElementById('reviewCount');
+    let reviewCount = localStorage.getItem('reviewCount');
+
+    if (reviewCount) {
+      reviewCount = parseInt(reviewCount) + 1;
+    } else {
+      reviewCount = 1;
+    }
+
+    localStorage.setItem('reviewCount', reviewCount);
+    countElement.textContent = reviewCount;
 
 const currentYearElement = document.getElementById("currentyear");
 if (currentYearElement) {
