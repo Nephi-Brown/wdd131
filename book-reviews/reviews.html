@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Nephi Brown. Web Site for book reviews, discussion, genre recommendations, and books listed by author."
+    />
+    <meta name="author" content="Nephi Brown" />
+    <title>WDD 131 - Book Reviewers Forum - Nephi Brown</title>
+    <link rel="stylesheet" href="styles/book-review.css" />
+    <link rel="stylesheet" href="styles/book-review-large.css" />
+    <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon" />
+    <script src="scripts/book-review.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Book Reviewers Forum</div>
+      <nav>
+        <ul>
+          <li><a href="book-review.html">Home</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger">&#9776;</button>
+    </header>
+    <section class="reviews-section">
+      <h2>Game Reviews</h2>
+      <div class="filters">
+        <label for="genre">Genre:</label>
+        <select id="genre" name="genre">
+          <option value="all">All</option>
+          <option value="thriller">Thriller</option>
+          <option value="adventure">Adventure</option>
+          <option value="horror">Horror</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="romance">Romance</option>
+        </select>
+        <label for="author">Author:</label>
+        <select id="author" name="author">
+          <option value="all">All</option>
+          <option value="hplovecraft">H.P.Lovecraft</option>
+          <option value="brandonsanderson">Brandon Sanderson</option>
+          <option value="christopherpaolini">Christopher Paolini</option>
+          <option value="sophieranald">Sophie Ranald</option>
+          <option value="ianfleming">Ian Fleming</option>
+        </select>
+        <label for="sort">Sort by:</label>
+        <select id="sort" name="sort">
+          <option value="latest">Latest</option>
+          <option value="rating">Rating</option>
+        </select>
+      </div>
+      <div class="review-grid"></div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="quick-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="book-review.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h4>Newsletter</h4>
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
