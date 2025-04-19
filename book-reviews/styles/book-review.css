@@ -193,6 +193,16 @@ header .logo {
   object-fit: cover;
 }
 
+.review-grid {
+  min-height: 700px;
+}
+
+.rating-image {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
 footer {
   background-color: #416df0;
   color: white;

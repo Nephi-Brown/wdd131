@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const reviewItem = document.createElement("div");
       reviewItem.className = "review-item";
       reviewItem.innerHTML = `
-      <img src="${review.image}" alt="Game Image" class="rating-image fixed-size">
+      <img src="${review.image}" alt="..." width="200" height="300" class="rating-image">
       <h3>${review.title}</h3>
       <p>${review.description}</p>
       <p>Rating: ${review.rating}</p>
