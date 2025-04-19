@@ -1,18 +1,27 @@
-@media screen and (min-width: 768px) {
-    nav ul {
-      display: flex !important;
-      flex-direction: row !important;
-      gap: 10px !important;
+@media screen and (min-width: 760px) {
+    /* Show menu links by default on large screens */
+    .navigation {
+      display: flex;
+      flex-direction: row;
       justify-content: center;
-      max-width: 640px;
-      margin: 1rem auto;
-      align-items: center;
-    }
-    nav ul li {
-      margin: 0 15px;
     }
   
-    #hamburger {
+    .navigation li {
+      display: inline;
+      flex: 1 1 auto;
+    }
+  
+    .navigation a {
+      text-align: center;
+    }
+  
+    /* Disable the hamburger toggle and hide button */
+    #menu {
       display: none;
+    }
+  
+    .navigation.show {
+      /* No need to change anything on large screens; just use default layout */
+      flex-direction: row;
     }
   }
