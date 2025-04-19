@@ -187,6 +187,12 @@ header .logo {
   font-weight: bold;
 }
 
+.fixed-size {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
 footer {
   background-color: #416df0;
   color: white;

@@ -19,12 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const reviewItem = document.createElement("div");
       reviewItem.className = "review-item";
       reviewItem.innerHTML = `
-        <img src="${review.image}" alt="Game Image" class="rating-image">
-        <h3>${review.title}</h3>
-        <p>${review.description}</p>
-        <p>Rating: ${review.rating}</p>
-        <a href="#" class="read-more">Read More</a>
-      `;
+      <img src="${review.image}" alt="Game Image" class="rating-image fixed-size">
+      <h3>${review.title}</h3>
+      <p>${review.description}</p>
+      <p>Rating: ${review.rating}</p>
+      <a href="#" class="read-more">Read More</a>
+    `;
       reviewGrid.appendChild(reviewItem);
     });
   };
